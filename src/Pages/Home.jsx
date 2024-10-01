@@ -44,35 +44,35 @@ const Images = [
     },
     {
         id: 2,
-        img: Innova,
+        img: Etios,
         rs: "12",
         name: "Etios",
         seater: 7,
         bags: 9
     }, {
         id: 3,
-        img: Innova,
+        img: Indigo,
         rs: "8.50",
         name: "Indigo",
         seater: 4,
         bags: 6
     }, {
         id: 4,
-        img: Innova,
+        img: Deluxe,
         rs: "12",
         name: "Deluxe Mini-Bus",
         seater: 37,
         bags: 42
     }, {
         id: 5,
-        img: Innova,
+        img: LuxuryCoach,
         rs: "15",
         name: "Luxury coach",
         seater: 54,
         bags: 60
     }, {
         id: 6,
-        img: Innova,
+        img: TempoTraveller,
         rs: "20",
         name: "17S Tempo Traveller",
         seater: 17,
@@ -109,7 +109,7 @@ export const Home = () => {
             {/* <Header /> */}
 
             <Box py={8}>
-                <Grid container px={{ xl: 20, lg: 10, sm: 2 }} justifyContent="center" columnGap={3} rowGap={7}>
+                <Grid container px={{ xl: 20, lg: 10, xs: 2 }} justifyContent="center" columnGap={3} rowGap={7}>
                     <Grid size={{ md: 5.8, xs: 12 }}>
                         <Stack direction="row" columnGap={3} width="100%">
                             <Box sx={{ display: 'flex', alignItems: "center", justifyContent: "center", minWidth: "66px", height: "66px" }} border="3px solid #1E73BE" > <FaRegCalendarCheck fontSize="28px" fill="#1E73BE" /></Box>
@@ -366,7 +366,7 @@ export const Home = () => {
                             // centerSlidePercentage={slidePercentage} // 100% on mobile (1 item), 33.33% on larger screens (3 items)
 
                             >
-                                <Box height="280px">
+                                <Box height="380px">
                                     <Stack direction="row" columnGap={4}>
                                         <ImQuotesLeft fill="#1E73BE" style={{ fontSize: '90px', paddingBottom: "56px" }} />
                                         <Typography sx={{ fontSize: "16px", color: "#424242", lineHeight: "160%", textAlign: 'center' }}>
@@ -381,7 +381,7 @@ export const Home = () => {
                                     <Typography sx={{ fontSize: "16px", color: "#424242", lineHeight: "160%", textAlign: 'center' }}>Mike Jones - Luxury Coach
                                     </Typography>
                                 </Box>
-                                <Box height="280px">
+                                <Box height={{ sm: "380px", xs: "450px" }}>
                                     <Stack direction="row" columnGap={4}>
                                         <ImQuotesLeft fill="#1E73BE" style={{ fontSize: '90px', paddingBottom: "56px" }} />
                                         <Typography sx={{ fontSize: "16px", color: "#424242", lineHeight: "160%", textAlign: 'center' }}>
@@ -398,8 +398,8 @@ export const Home = () => {
                             </Carousel>
                         </Box>
                     </Box>
-                </Grid>
-            </Grid>
+                </Grid >
+            </Grid >
 
             {/* <Footer /> */}
 

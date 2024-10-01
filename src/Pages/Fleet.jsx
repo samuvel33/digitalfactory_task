@@ -24,7 +24,7 @@ const Images = [
     },
     {
         id: 2,
-        img: Innova,
+        img: Etios,
         rs: "12",
         name: "Etios",
         seater: 7,

@@ -42,6 +42,7 @@ const steps = [
     'Select Vehicle',
     'Enter Payment Details',
     'Confirmation',
+
 ];
 
 export default function Booking() {
@@ -54,7 +55,7 @@ export default function Booking() {
                     {steps.map((label, index) => (
                         <Step key={label}>
                             <StepLabel icon={<Box sx={{ display: "flex", alignItems: "center", justifyContent: "center", fontSize: "15px", width: "51px", height: "51px", backgroundColor: index == 0 ? "#1E73BE" : "#002C49", borderRadius: "100px", color: "#FFFFFF", fontFamily: `Montserrat, sans-serif !important` }}>{index + 1}.</Box>}>
-                                <Typography sx={{ fontSize: "15px", color: "#424242", fontFamily: `Montserrat, sans-serif !important` }}>
+                                <Typography sx={{ fontSize: "15px", color: "#424242", fontFamily: `Montserrat, sans-serif !important`,wordBreak:'break-word' }}>
                                     {label}
                                 </Typography>
                             </StepLabel>
