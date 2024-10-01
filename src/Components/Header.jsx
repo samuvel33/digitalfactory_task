@@ -151,7 +151,7 @@ export default function Header() {
                                 </Box>
 
                                 <Box width="100%" height={{ lg: "600px", xs: "500px", }}>
-                                    <Box sx={{ width: "100%", height: "100%", background: 'url(https://basstravels.in/digitalfactory_content/uploads/2017/07/B2.jpg)', backgroundRepeat: "no-repeat", backgroundPosition: "center", }}>
+                                    <Box sx={{ width: "100%", height: "100%", background: 'url(https://basstravels.in/digitalfactory_content/uploads/2017/07/B2.jpg)', backgroundRepeat: "no-repeat", backgroundPosition: "center", backgroundSize: "cover" }}>
                                         <Stack height="100%" direction="column" alignItems="center" justifyContent="center">
                                             <Stack height="100%" direction="column" alignItems="center" justifyContent="center">
                                                 <Typography sx={{ fontSize: { lg: "64px", md: "40px", xs: "24px" }, color: "#FFFFFF", fontFamily: `Montserrat, sans-serif !important`, textAlign: 'center' }}>Welcome to BASS TRAVELS! </Typography>
