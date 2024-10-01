@@ -3,11 +3,18 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { LocalizationProvider } from '@mui/x-date-pickers';
+import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs';
+import { Myprovider } from './Components/Context';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <LocalizationProvider dateAdapter={AdapterDayjs}>
+      <Myprovider>
+        <App />
+      </Myprovider>
+    </LocalizationProvider>
   </React.StrictMode>
 );
 
