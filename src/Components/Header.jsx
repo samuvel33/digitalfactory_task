@@ -6,8 +6,6 @@ import { FiCheckSquare } from "react-icons/fi";
 import NavigateNextIcon from '@mui/icons-material/NavigateNext';
 import { FaSearch } from "react-icons/fa";
 import DehazeIcon from '@mui/icons-material/Dehaze';
-import { useTheme } from "@emotion/react";
-import { Block } from "@mui/icons-material";
 import { useNavigate } from "react-router-dom";
 import { MyContext } from "./Context";
 import ChevronRightIcon from '@mui/icons-material/ChevronRight';
@@ -105,12 +103,9 @@ export default function Header() {
                 {
                     (navlink?.name != "Home") && <Box width="100%" sx={{ position: "relative", height: '190px' }}>
                         <Box sx={{ position: "absolute", zIndex: "", top: { md: "-30px", xs: '0px' }, width: "100%", height: "190px", background: 'url(https://basstravels.in/digitalfactory_content/uploads/2017/07/WH.jpg)', backgroundRepeat: "no-repeat", backgroundPosition: "center" }}>
-                            {/* <Box component="img" src={BusBgHome} sx={{ width: "100%", minHeight: "400px", height: "100%", objectFit: "cover" }}></Box> */}
                             <Stack height="100%" direction="column" alignItems="center" justifyContent="center">
                                 <Typography sx={{ fontSize: "28px", color: '#424242', fontFamily: `Montserrat, sans-serif !important`, textAlign: 'center' }}>About </Typography>
                                 <Box my={2} sx={{ borderTop: "3px solid #1E73BE", width: "45px" }}></Box>
-                                {/* </Stack> */}
-                                {/* <Typography sx={{ fontSize: "16px", color: "#424242", lineHeight: "160%", textAlign: 'center' }}> <span>Home</span>  <ChevronRightIcon fontSize="20px" sx={{ pt: 1 }} /> <span>About</span> </Typography> */}
                                 <Stack direction="row" alignItems="center" justifyContent="center" columnGap={1}>
                                     <Typography onClick={() => { navigate('/'); setNavlink({ name: "Home", link: "/" }) }} sx={{ fontSize: "16px", color: "#424242", lineHeight: "160%", textAlign: 'center' }}> Home</Typography>
                                     <ChevronRightIcon fontSize="20px" sx={{ color: "#424242" }} />

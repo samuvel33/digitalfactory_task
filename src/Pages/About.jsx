@@ -12,9 +12,7 @@ export default function About() {
             <Grid py={10} container px={{ xl: 20, lg: 10, xs: 2 }} rowGap={6} columnGap={4}>
                 <Grid size={{ md: 5.6, xs: 12 }} rowGap={2} >
                     <Typography sx={{ fontSize: "24px", color: "#42424", fontFamily: `Montserrat, sans-serif !important` }}>BASS TRAVELS </Typography>
-                    {/* <Stack direction="row" alignContent="center" justifyContent="center"> */}
                     <Box my={4} sx={{ borderTop: "3px solid #1E73BE", width: "45px" }}></Box>
-                    {/* </Stack> */}
                     <Typography sx={{ fontSize: "16px", color: "#42424", lineHeight: "160%" }}>BASS TRAVELS is a leading tours and travels agency in Pondicherry.
                         With over 10 years of experience in organizing tours and providing fleet services, we have gathered significant knowledge in designing and
                         offering you the best tour packages to meet your requirements perfectly. We also accommodate custom travel needs that you might have and offer
@@ -27,7 +25,6 @@ export default function About() {
                 </Grid>
                 <Grid size={{ md: 5.6, xs: 12 }}>
                     <Typography sx={{ fontSize: "24px", color: "#42424", fontFamily: `Montserrat, sans-serif !important` }}>BASS FLEET </Typography>
-                    {/* <Stack direction="row" alignContent="center" justifyContent="center"> */}
                     <Box my={4} sx={{ borderTop: "3px solid #1E73BE", width: "45px" }}></Box>
                     <Box sx={{ width: "100%", }}>
                         <Box component="img" src={'https://basstravels.in/digitalfactory_content/uploads/2017/02/BTFG-1024x683.jpg"'} sx={{ width: "100%", height: "100%", objectFit: "cover", border: "5px solid #EBEBEB" }}></Box>
@@ -56,9 +53,7 @@ export default function About() {
 
                 <Grid size={{ md: 5.6, xs: 12 }} rowGap={2} >
                     <Typography sx={{ fontSize: "20px", color: "#42424", fontFamily: `Montserrat, sans-serif !important` }}>Our Services </Typography>
-                    {/* <Stack direction="row" alignContent="center" justifyContent="center"> */}
                     <Box my={4} sx={{ borderTop: "3px solid #1E73BE", width: "45px" }}></Box>
-                    {/* </Stack> */}
                     <Typography sx={{ fontSize: "16px", color: "#42424", lineHeight: "160%" }}>
                         BASS TRAVELS offer ‘ <span style={{ fontWeight: "bold" }}>luxury fleet rentals with driver</span>‘ & ‘  <span style={{ fontWeight: "bold" }}>tour packages</span>’ to suit variety of needs & seasons.
                     </Typography>
@@ -97,9 +92,7 @@ export default function About() {
                 </Grid>
                 <Grid size={{ md: 5.6, xs: 12 }} rowGap={2} >
                     <Typography sx={{ fontSize: "20px", color: "#42424", fontFamily: `Montserrat, sans-serif !important` }}>Our Mission </Typography>
-                    {/* <Stack direction="row" alignContent="center" justifyContent="center"> */}
                     <Box my={4} sx={{ borderTop: "3px solid #1E73BE", width: "45px" }}></Box>
-                    {/* </Stack> */}
                     <Typography sx={{ fontSize: "16px", color: "#42424", lineHeight: "160%" }}>
                         Our mission is to become the most preferred tours and travel services company in Pondicherry, by delivering quality services to clients consistently through happy travel experiences. </Typography>
 

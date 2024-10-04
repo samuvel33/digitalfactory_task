@@ -89,16 +89,16 @@ export const Home = () => {
 
     const [TabValue, setTabValue] = useState(1)
 
-    const isMobile = useMediaQuery('(max-width: 600px)'); // Detects mobile view
-    const isTablet = useMediaQuery('(min-width: 601px) and (max-width: 1024px)'); // Detects tablet view
+    const isMobile = useMediaQuery('(max-width: 600px)');
+    const isTablet = useMediaQuery('(min-width: 601px) and (max-width: 1024px)');
 
     let slidePercentage;
     if (isMobile) {
-        slidePercentage = 100; // Single item on mobile
+        slidePercentage = 100;
     } else if (isTablet) {
-        slidePercentage = 50; // Two items on tablet
+        slidePercentage = 50;
     } else {
-        slidePercentage = 33.33; // Three items on desktop
+        slidePercentage = 33.33;
     }
 
 
@@ -266,15 +266,13 @@ export const Home = () => {
                             ))}
                         </Carousel>
                     </Box>
-                </Box >
-            </Box >
+                </Box>
+            </Box>
 
             <Grid py={10} container px={{ xl: 20, lg: 10, xs: 2 }} rowGap={3} columnGap={3}>
                 <Grid size={{ md: 5.6, xs: 12 }} rowGap={2}>
                     <Typography sx={{ fontSize: "24px", color: "#42424", fontFamily: `Montserrat, sans-serif !important` }}>About - BASS TRAVELS  </Typography>
-                    {/* <Stack direction="row" alignContent="center" justifyContent="center"> */}
                     <Box my={4} sx={{ borderTop: "3px solid #1E73BE", width: "45px" }}></Box>
-                    {/* </Stack> */}
                     <Typography sx={{ fontSize: "16px", color: "#42424", lineHeight: "160%" }}>BASS TRAVELS – a leading tours and travels agency in Pondicherry with over ten years of experience specializes in organizing tours and offering fleet & taxi services. We have gathered significant knowledge and exposure to design and offer you the best services and meet your requirements perfectly.</Typography>
                     <Typography mt={3} sx={{ fontSize: "16px", color: "#42424", lineHeight: "160%" }}>We also accommodate custom trip requests to offer you the best we can at reasonable fares. Our professional drivers will guide and support you to ensure that your journey turns out to be a comfortable experience.</Typography>
                     <Button onClick={() => { navigate('/about'); setNavlink({ name: "About", link: "/about" }) }} endIcon={<NavigateNextIcon />} sx={{ width: '160px', borderRadius: "30px", backgroundColor: "#1E73BE", color: "#FFFFFF", height: "44px", textTransform: "none", mt: 3 }}>Learn More</Button>
@@ -285,7 +283,6 @@ export const Home = () => {
                 </Grid>
             </Grid>
             <Box sx={{ width: "100%", height: "360px", background: 'url(https://sp-ao.shortpixel.ai/client/to_webp,q_glossy,ret_img/https://basstravels.in/digitalfactory_content/uploads/2017/07/CTAM.jpg)' }}>
-                {/* <Box component="img" src={BusBgHome} sx={{ width: "100%", minHeight: "400px", height: "100%", objectFit: "cover" }}></Box> */}
                 <Stack height="100%" direction="column" alignItems="center" justifyContent="center">
                     <Typography sx={{ fontSize: { md: "34px", xs: "24px" }, color: "#FFFFFF", fontFamily: `Montserrat, sans-serif !important`, textAlign: 'center' }}>Book Online Now to Enjoy Comfort Travel! </Typography>
                     <Box my={4} sx={{ borderTop: "3px solid #1E73BE", width: "45px" }}></Box>
@@ -300,11 +297,9 @@ export const Home = () => {
             <Grid py={10} container px={{ xl: 20, lg: 10, xs: 2 }} rowGap={3} columnGap={6}>
                 <Grid size={{ md: 5.6, xs: 12 }} rowGap={2} textAlign="center">
                     <Typography sx={{ fontSize: "24px", color: "#42424", fontFamily: `Montserrat, sans-serif !important` }}>Fleet gallery</Typography>
-                    {/* <Stack direction="row" alignContent="center" justifyContent="center"> */}
                     <Stack width="100%" direction="row" alignItems="center" justifyContent="center">
                         <Box my={4} sx={{ borderTop: "3px solid #1E73BE", width: "45px" }}></Box>
                     </Stack>
-                    {/* <Stack sx={{ display: "flex", flexWrap: 'wrap', flexDirection: 'row' }} rowGap={2} columnGap={2}> */}
                     <Box width="100%">
                         <Grid container size={{ xs: 12 }} rowGap={4} columnGap={2}>
                             <Grid size={{ xs: 3.6 }} rowGap={2}>
@@ -348,7 +343,6 @@ export const Home = () => {
                 </Grid>
                 <Grid size={{ md: 5.6, xs: 12 }} textAlign="center">
                     <Typography sx={{ fontSize: "24px", color: "#42424", fontFamily: `Montserrat, sans-serif !important` }}>Customer Opinions</Typography>
-                    {/* <Stack direction="row" alignContent="center" justifyContent="center"> */}
                     <Stack width="100%" direction="row" alignItems="center" justifyContent="center">
                         <Box my={4} sx={{ borderTop: "3px solid #1E73BE", width: "45px" }}></Box>
                     </Stack>
@@ -362,8 +356,6 @@ export const Home = () => {
                                 interval={3500}
                                 showStatus={false}
                                 showArrows={false}
-                            // centerMode={!isMobile}
-                            // centerSlidePercentage={slidePercentage} // 100% on mobile (1 item), 33.33% on larger screens (3 items)
 
                             >
                                 <Box height="380px">
@@ -398,10 +390,9 @@ export const Home = () => {
                             </Carousel>
                         </Box>
                     </Box>
-                </Grid >
-            </Grid >
+                </Grid>
+            </Grid>
 
-            {/* <Footer /> */}
 
         </>
     )

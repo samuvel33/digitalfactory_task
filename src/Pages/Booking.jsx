@@ -108,11 +108,7 @@ export default function Booking() {
                         {TabValue == 2 &&
                             <Stack backgroundColor="#002C49" py={3} columnGap={3} rowGap={3} width="100%" direction="column" alignItems="center">
                                 <Stack rowGap={1} width="90%">
-                                    {/* <Typography sx={{ fontSize: "16px", color: "#FFFFFF", }}>Drop Off Address</Typography> */}
-                                    {/* <TextField sx={{ backgroundColor: "#FFFFFF" }} fullWidth placeholder="Enter a location"
-                                InputProps={{ disableUnderline: true, endAdornment: <IconButton><LocationOnIcon sx={{ color: "#B4B4B4" }} /> </IconButton> }}
-                            /> */}
-                                    <Select defaultValue={1} sx={{ backgroundColor: "#FFFFFF", width: "100%" }}>
+                                       <Select defaultValue={1} sx={{ backgroundColor: "#FFFFFF", width: "100%" }}>
                                         <MenuItem value={1}>{`Chennai Airport > Pondicherry`}</MenuItem>
                                         <MenuItem value={2}>{` Pondicherry > Chennai Airport`} </MenuItem>
                                         <MenuItem value={3}>{` Pondicherry > Chennai Central `}</MenuItem>
@@ -121,7 +117,6 @@ export default function Booking() {
                                     </Select>
                                 </Stack>
                                 <Stack rowGap={1} width="90%">
-                                    {/* <Typography sx={{ fontSize: "16px", color: "#FFFFFF", }}>Pick Up Date</Typography> */}
                                     <DatePicker format="DD/MM/YYYY" defaultValue={dayjs(new Date())} sx={{ backgroundColor: "#FFFFFF" }} />
                                 </Stack>
                                 <Stack direction="row" alignItems="center" rowGap={1} columnGap={3} width="90%">
@@ -136,9 +131,7 @@ export default function Booking() {
                     </Grid>
                     <Grid size={{ md: 6, xs: 12 }} p={3} border="1px solid #E8E8E8">
                         <Typography sx={{ fontSize: "24px", color: "#42424", fontFamily: `Montserrat, sans-serif !important` }}>ONLINE BOOKING</Typography>
-                        {/* <Stack direction="row" alignContent="center" justifyContent="center"> */}
                         <Box my={4} sx={{ borderTop: "3px solid #1E73BE", width: "45px" }}></Box>
-                        {/* </Stack> */}
                         <Typography sx={{ fontSize: "16px", color: "#42424", lineHeight: "160%" }}>BASS TRAVELS now offers “ONLINE BOOKING”
                             of their wide range of fleet from luxury and deluxe coaches, mini-buses, tempo-travelers and premium taxis to meet the
                             varied travel needs of their customers. Simple enter your pick-up and drop-off addresses, your preferred date and time of travel,

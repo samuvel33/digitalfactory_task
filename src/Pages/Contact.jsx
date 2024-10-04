@@ -18,9 +18,7 @@ export default function Contact() {
 
                     <Grid size={{ md: 5, xs: 12 }} >
                         <Typography sx={{ fontSize: "24px", color: "#42424", fontFamily: `Montserrat, sans-serif !important` }}>Get In Touch</Typography>
-                        {/* <Stack direction="row" alignContent="center" justifyContent="center"> */}
                         <Box my={4} sx={{ borderTop: "3px solid #1E73BE", width: "45px" }}></Box>
-                        {/* </Stack> */}
                         <Typography sx={{ fontSize: "16px", color: "#42424", lineHeight: "160%" }}>Got a custom tour/vehicle requirement?
                             Write to us using the form below. Also feel free to call our office landline or mobile numbers listed or
                             kindly drop in to our office to discuss your requirements in person. We’d be glad to respond to your needs quickly.
